@@ -1,0 +1,28 @@
+input[type="submit"] {
+  width: 100%;
+  margin-top: 2em;
+}
+
+main {
+  display: flex;
+  height: 100%;
+}
+
+.form-container {
+  width: 55%;
+  margin: auto;
+  margin-top: 3em;
+  padding: 3em 6em;
+}
+
+label {
+  margin-bottom: 0.5em;
+  display: block;
+  margin-top: 1em;
+}
+
+.image {
+  width: 45%;
+  background: url("../../assets/image.jpg") right;
+  background-size: cover;
+}

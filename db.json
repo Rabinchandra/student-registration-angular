@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "emailId": "john@gmail.com",
+      "firstName": "John",
+      "lastName": "doe",
+      "password": "johndoe"
+    },
+    {
+      "id": "2",
+      "emailId": "mary@gmail.com",
+      "firstName": "Mary",
+      "lastName": "doe",
+      "password": "marydoe"
+    },
+    {
+      "id": 2811,
+      "firstName": "Van",
+      "lastName": "Hams",
+      "emailId": "vanhams@gmail.com",
+      "password": "vanhams"
+    },
+    {
+      "id": 8808,
+      "firstName": "rabin",
+      "lastName": "yen",
+      "emailId": "rabinyen@gmail.com",
+      "password": "rabinyen"
+    },
+    {
+      "id": 6499,
+      "firstName": "vivek",
+      "lastName": "kumar",
+      "emailId": "vivek@gmail.com",
+      "password": "vivekkumar"
+    }
+  ]
+}

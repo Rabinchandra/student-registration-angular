@@ -1,0 +1,79 @@
+<div>
+  <h2>Student Profile</h2>
+  <section class="form-container">
+    <form (ngSubmit)="handleSubmit()">
+      <div>
+        <label for="firstname">First Name</label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          [(ngModel)]="firstName"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="lastname">Last Name</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          [(ngModel)]="lastName"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="gender">Gender</label>
+        <input
+          type="text"
+          name="gender"
+          id="gender"
+          [(ngModel)]="gender"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="dob">Date of Birth</label>
+        <input
+          type="date"
+          name="dob"
+          id="dob"
+          [(ngModel)]="dob"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="phoneNumber">Phone Number</label>
+        <input
+          type="tel"
+          name="phoneNumber"
+          id="phoneNumber"
+          [(ngModel)]="phoneNumber"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="grade">Grade</label>
+        <input
+          type="text"
+          name="grade"
+          id="grade"
+          [(ngModel)]="grade"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="enrolledCourse">Enrolled Course</label>
+        <input
+          type="text"
+          name="enrolledCourse"
+          id="enrolledCourse"
+          [(ngModel)]="enrolledCourse"
+          autocomplete="off"
+        />
+      </div>
+
+      <input type="submit" class="btn-primary" value="Save the details" />
+    </form>
+  </section>
+</div>

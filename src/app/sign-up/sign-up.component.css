@@ -1,0 +1,30 @@
+main {
+  display: flex;
+  height: 100%;
+}
+
+.form-container {
+  width: 55%;
+  padding: 4em 6em;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.btn-primary {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.image {
+  background: url("https://images.unsplash.com/photo-1501441858156-e505fb04bfbc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW4lMjBzdW5nbGFzc2VzfGVufDB8fDB8fHww")
+    center;
+  width: 45%;
+  background-size: cover;
+}

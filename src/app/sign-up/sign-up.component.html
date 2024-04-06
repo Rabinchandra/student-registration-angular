@@ -1,0 +1,51 @@
+<main>
+  <section class="form-container">
+    <h2>Sign Up</h2>
+    <form (ngSubmit)="handleSubmit()">
+      <div>
+        <label for="firstname">First Name</label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          [(ngModel)]="firstName"
+        />
+      </div>
+      <div>
+        <label for="lastname">Last Name</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          [(ngModel)]="lastName"
+        />
+      </div>
+      <div>
+        <label for="email">Email Name</label>
+        <input type="email" name="email" id="email" [(ngModel)]="email" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          [(ngModel)]="password"
+        />
+      </div>
+      <input type="submit" value="Sign up" class="btn-primary" />
+    </form>
+    <div class="google-sign-in">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+        alt=""
+      />
+      Sign up with Google
+    </div>
+    <p class="text-center">
+      Already have an account?
+      <a [routerLink]="['/login']">Sign in</a>
+    </p>
+  </section>
+  <section class="image"></section>
+</main>

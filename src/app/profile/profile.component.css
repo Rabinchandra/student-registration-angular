@@ -1,0 +1,12 @@
+form div {
+  margin-bottom: 10px;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="submit"] {
+  width: 100%;
+  margin-top: 1em;
+}

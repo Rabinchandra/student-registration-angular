@@ -1,0 +1,31 @@
+<nav>
+  <div class="nav-brand">Student Dashboard</div>
+  <div class="links">
+    <a
+      [routerLink]="['/student/profile']"
+      [class]="activeLink === 'profile' ? 'active' : ''"
+      (click)="activeLink = 'profile'"
+      >Profile</a
+    >
+    <a
+      [routerLink]="['/student/details']"
+      [class]="activeLink === 'details' ? 'active' : ''"
+      (click)="activeLink = 'details'"
+      >Details</a
+    >
+  </div>
+  <div class="profile">
+    <span>
+      <i class="fi fi-rr-bell"></i>
+    </span>
+    <div class="profile-pic"></div>
+  </div>
+</nav>
+
+<main>
+  <div class="main-profile"></div>
+  <h1 class="text-center">
+    Hello <span class="first-name">{{ currentStudent?.firstName }} 👋!!</span>
+  </h1>
+  <router-outlet></router-outlet>
+</main>

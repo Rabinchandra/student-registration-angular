@@ -1,0 +1,43 @@
+<main>
+  <div class="image"></div>
+
+  <div class="form-container">
+    <h2>Sign in</h2>
+
+    <form (ngSubmit)="handleLogin()">
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="text"
+          [(ngModel)]="emailId"
+          name="emailId"
+          placeholder="Enter your email"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+      </div>
+      <div>
+        <input type="submit" value="Sign in" class="btn-primary" />
+      </div>
+    </form>
+    <div class="google-sign-in">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+        alt=""
+      />
+      Sign in with Google
+    </div>
+    <p class="text-center">
+      Don't have an account?
+      <a [routerLink]="['/sign-up']">Sign up</a>
+    </p>
+  </div>
+</main>
