@@ -70,7 +70,7 @@ export class StudentService {
         } else {
           // Register
           const newStudent: Student = {
-            id: ~~(Math.random() * 10000),
+            id: String(~~(Math.random() * 10000)),
             firstName,
             lastName,
             emailId,
@@ -89,5 +89,11 @@ export class StudentService {
         }
       },
     });
+  }
+
+  // Update Student
+  updateStudent(updated: Student): Observable<Student> {
+    const url = `${this.apiUrl}/${updated.id}`;
+    return this.http.put<Student>(url, updated);
   }
 }

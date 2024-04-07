@@ -1,12 +1,12 @@
 export interface Student {
-  id: number;
-  firstName: string;
-  lastName: string;
-  emailId: string;
-  password: string;
-  gender?: string;
-  dateOfBirth?: Date;
-  phoneNumber?: string;
-  grade?: number;
-  enrolledCourse?: string;
+  id?: string | undefined;
+  firstName?: string | undefined;
+  lastName?: string | undefined;
+  emailId?: string | undefined;
+  password?: string | undefined;
+  gender?: string | undefined;
+  dateOfBirth?: string | undefined;
+  phoneNumber?: string | undefined;
+  grade?: number | undefined;
+  enrolledCourse?: string | undefined;
 }

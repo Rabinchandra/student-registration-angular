@@ -13,22 +13,45 @@ import { Student } from '../../../Student';
 export class ProfileComponent {
   currentStudent: Student | null = null;
 
-  firstName: string | undefined;
-  lastName: string | undefined;
-  gender: string | undefined;
-  dob: string | undefined;
-  phoneNumber: string | undefined;
-  grade: string | undefined;
-  enrolledCourse: string | undefined;
+  firstName: string | undefined = '';
+  lastName: string | undefined = '';
+  gender: string | undefined = '';
+  dob: string | undefined = '';
+  phoneNumber: string | undefined = '';
+  grade: number | undefined = 0;
+  enrolledCourse: string | undefined = ' ';
 
   constructor(private studentService: StudentService) {
     this.currentStudent = this.studentService.currentStudent;
 
     this.firstName = this.currentStudent?.firstName;
     this.lastName = this.currentStudent?.lastName;
+    this.gender = this.currentStudent?.gender;
+    this.dob = this.currentStudent?.dateOfBirth;
+    this.phoneNumber = this.currentStudent?.phoneNumber;
+    this.grade = this.currentStudent?.grade;
+    this.enrolledCourse = this.currentStudent?.enrolledCourse;
   }
 
   handleSubmit() {
-    console.log('submitted...');
+    const updated: Student = {
+      ...this.currentStudent,
+      firstName: this.firstName,
+      lastName: this.lastName,
+      gender: this.gender,
+      dateOfBirth: this.dob,
+      phoneNumber: this.phoneNumber,
+      grade: this.grade,
+      enrolledCourse: this.enrolledCourse,
+    };
+
+    this.studentService.updateStudent(updated).subscribe({
+      next: () => {
+        alert('Profile Updated sucessfully');
+      },
+      error: () => {
+        alert('Something went wrong!!');
+      },
+    });
   }
 }

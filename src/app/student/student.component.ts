@@ -26,7 +26,7 @@ export class StudentComponent {
   // Note: constructor always calls first before any lifecycle hooks
   ngOnInit() {
     if (!this.currentStudent) {
-      // this.router.navigate(['/login']);
+      this.router.navigate(['/login']);
     }
   }
 }

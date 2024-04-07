@@ -28,3 +28,22 @@ label {
   width: 45%;
   background-size: cover;
 }
+
+@media screen and (max-width: 800px) {
+  main {
+    display: block;
+  }
+  main .image {
+    display: none;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    padding: 2em;
+  }
+}

@@ -1,39 +1,28 @@
 {
   "students": [
     {
-      "id": "1",
-      "emailId": "john@gmail.com",
+      "id": "445",
       "firstName": "John",
-      "lastName": "doe",
-      "password": "johndoe"
+      "lastName": "Doe",
+      "emailId": "johndoe@gmail.com",
+      "password": "johndoe",
+      "gender": "Male",
+      "dateOfBirth": "2024-04-26",
+      "phoneNumber": "7979797222",
+      "grade": "5",
+      "enrolledCourse": "Java"
     },
     {
-      "id": "2",
-      "emailId": "mary@gmail.com",
-      "firstName": "Mary",
-      "lastName": "doe",
-      "password": "marydoe"
-    },
-    {
-      "id": 2811,
-      "firstName": "Van",
-      "lastName": "Hams",
-      "emailId": "vanhams@gmail.com",
-      "password": "vanhams"
-    },
-    {
-      "id": 8808,
-      "firstName": "rabin",
-      "lastName": "yen",
-      "emailId": "rabinyen@gmail.com",
-      "password": "rabinyen"
-    },
-    {
-      "id": 6499,
-      "firstName": "vivek",
-      "lastName": "kumar",
-      "emailId": "vivek@gmail.com",
-      "password": "vivekkumar"
+      "id": "2584",
+      "firstName": "Tom",
+      "lastName": "Hanks",
+      "emailId": "tomhanks@gmail.com",
+      "password": "tomhanks",
+      "gender": "Male",
+      "dateOfBirth": "2024-04-11",
+      "phoneNumber": "55555555",
+      "grade": "6",
+      "enrolledCourse": "JavaScript"
     }
   ]
 }
