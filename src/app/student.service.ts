@@ -47,7 +47,7 @@ export class StudentService {
           this.router.navigate(['/student']);
         } else {
           // If user doesn't exists
-          alert("User doesn't exist");
+          alert('Wrong Credentials!!');
           console.log('User not found');
         }
       },

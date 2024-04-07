@@ -23,6 +23,18 @@
       "phoneNumber": "55555555",
       "grade": "6",
       "enrolledCourse": "JavaScript"
+    },
+    {
+      "id": "1073",
+      "firstName": "Bob",
+      "lastName": "Frank",
+      "emailId": "bobfrank@gmail.com",
+      "password": "bobfrank",
+      "gender": "Male",
+      "dateOfBirth": "2006-09-13",
+      "phoneNumber": "66665556656",
+      "grade": "5",
+      "enrolledCourse": "Kotlin"
     }
   ]
 }
